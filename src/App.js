@@ -71,6 +71,43 @@ class App extends Component {
         {number: "HQ-2", name: "Ethereal", xp: 0, wargear: ["Markerlight Drone"]},
         {number: "Fast-1", name: "XV4 Piranhas", xp: 0, wargear: ["2 Models", "2x Fusion Blasters"]},
         {number: "Troop-1", name: "Kroot Carnivores", wargear: []}
+      ]},
+      {id: "DF-TS", name: "Declan", points: 0, army: "Thousand Sons", units: [
+        {number: "HQ-1", name: "Exalted Sorceror on Disc", xp: 0, wargear: ["Helm of the Third Eye", "Force Staff"], comments: "Warlord - High Magister"},
+        {number: "Troop-1", name: "Rubaric Marines", xp: 0, wargear: ["10 x Standard Wargear"]},
+        {number: "Heavy-1", name: "Forgefiend", xp: 0, wargear: []},
+        {number: "Trans-1", name: "Rhino", xp: 0, wargear: []}
+      ]},
+      {id: "JH-DG", name: "James", points: 0, army: "Death Guard", units: [
+        {number: "HQ-1", name: "Chaos Lord", xp: 0, wargear: ["Supperating Plate", "Plague Sword"], comments: "Warlord - Tainted Regeneration"},
+        {number: "Elite-1", name: "Biologis Putriyer", xp: 0, wargear: []},
+        {number: "Elite-2", name: "Foul Blightspawn", xp: 0, wargear: []},
+        {number: "Trans-1", name: "Rhino", xp: 0, wargear: []}
+      ]},
+      {id: "MW-TU", name: "Mike", points: 0, army: "T'au", units: [
+        {number: "HQ-1", name: "XV-8 Commander", xp: 0, wargear: ["Iridium Armour", "2x Shield Drones", "3x Cyclic Ion Blasters", "Engram Neuro Chip"], comments: "Warlord - Strength through Unity"},
+        {number: "HQ-2", name: "Ethereal", xp: 0, wargear: ["Markerlight Drone"]},
+        {number: "Fast-1", name: "XV4 Piranhas", xp: 0, wargear: ["2 Models", "2x Fusion Blasters"]},
+        {number: "Troop-1", name: "Kroot Carnivores", wargear: []}
+      ]},
+      {id: "RK-TU", name: "Ross", points: 0, army: "T'au", units: [
+        {number: "HQ-1", name: "XV-8 Commander" , xp: 0, wargear: ["3x Cyclic Ion Blaster", "2x MV4 Shield Drone", "Shield Generator", "Vectored Manouevering Thursters"], comments: "Warlrord - Strength of Belief"},
+        {number: "Elite-1", name: "Krootox Riders", xp: 0, wargear: []},
+        {number: "Fast-1", name: "TX4 Pirhanhas", xp: 0, wargear: ["2x MV1 Gun Drone", "Burst Cannon", "2x Seeker Missile"]},
+        {number: "Fast-2", name: "TX4 Pirhanhas", xp: 0, wargear: ["2x MV1 Gun Drone", "Burst Cannon", "2x Seeker Missile"]},
+        {number: "Troop-1", name: "Kroot Carnivores", xp:0, wargear: []}        
+      ]},
+      {id: "EL-DG", name: "Ewan", points: 0, army: "Death Guard", units: [
+        {number: "HQ-1", name: "Chaos Lord in Terminator Armour", xp: 0, wargear: ["Chainfist", "Combi-Plasma", "Supperating Plate"], comments: "Warlord - Tainted Regeneration"},
+        {number: "Heavy-1", name: "Predator", xp: 0, wargear: ["Twin Lascannon", "2x Lascannon Sponson", "Combi-bolter"]},
+        {number: "Troop-1", name: "Poxwalker", xp: 0, wargear: []},
+        {number: "Trans-1", name: "Rhino", xp: 0, wargear: ["2x Combi-bolter"]}
+      ]},
+      {id: "LM-DW", name: "Lee", points: 0, army: "Deathwatch", units: [
+        {number: "HQ-1", name: "Primaris Watch Captain", xp: 0, wargear: ["Plasma Pistol", "The Theif of Secrets (Relic Power Sword)"], comments: "Warlord - Lord of Hidden Knowledge"},
+        {number: "Heavy-1", name: "Hellblaster Squad", xp: 0, wargear: ["5x Plasma Incinerator"]},
+        {number: "Troop-1", name: "Intecessor Squad", xp: 0, wargear: ["5x Bolt Rifles"]},
+        {number: "Troop-2", name: "Veteran Squad", xp: 0, wargear: ["3x Terminator with Assault Cannon", "1x Vanguard Veteran with Power Maul and Hand Flamer", "1x Bike with Power Maul", "4x Frag Cannon", "1 Sergeant with Combi-Plasma and Xenophase Blade"]}
       ]}
     ]
   }
