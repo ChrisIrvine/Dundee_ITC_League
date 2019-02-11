@@ -12,8 +12,8 @@ class App extends Component {
   state = {
     players : [
       {id: "CI-BA", name: "Chris", points: 0, army: "Blood Angels", units: [
-        {number: "HQ-1", name: "Captain", xp: 0, wargear: ["Thunder Hammer", "Combi-Melta", "Jump Pack (Angels Wing)"], comments: "Warlord - Artisan of War"},
-        {number: "Elite-1", name: "Company Champion", xp: 0, wargear: ["Combat Shield", "Jump Pack", "Master-Crafted Power Sword"]},
+        {number: "HQ-1", name: "Captain in Cataphractii Armour", xp: 0, wargear: ["Thunder Hammer", "Combi-Melta"], comments: "Warlord - Artisan of War"},
+        {number: "Elite-1", name: "Company Champion", xp: 0, wargear: ["Combat Shield", "Jump Pack (Angels Wing)", "Master-Crafted Power Sword"]},
         {number: "Troop-1", name: "Scout Squad", xp: 0, wargear: ["3x Sniper and Cloak", "1x Missile Launcher and Cloak", "1x Sniper, Combi-Flamer and Cloak"]},
         {number: "Flyer-1", name: "Stormraven Gunship", xp: 0, wargear: ["2x Stormstrike Missile Launcher", "Twin Heavy Plasma Cannon", "Two Hurricane Bolters, Typhoon Missile Launcher"]}
       ]},
@@ -31,8 +31,8 @@ class App extends Component {
       ]},
       {id: "RM-WE", name: "Ryan", points: 0, army: "World Eaters", units: [
         {number: "HQ-1", name: "Chaos Lord", xp: 0, wargear: ["Power Axe (Axe of Blind Fury)", "Plasma Pistol"], comments: "Warlord - Slaughterborn"},
-        {number: "Flyer-1", name: "Heldrake", xp: 0, wargear: ["Standard"]},
-        {number: "Heavy-1", name: "Predator", xp: 0, wargear: ["Standard"]},
+        {number: "Flyer-1", name: "Heldrake", xp: 0, wargear: ["Baleflamer"]},
+        {number: "Heavy-1", name: "Predator", xp: 0, wargear: ["Twin Lascannon", "2x Heavy Bolter Sponson"]},
         {number: "Troop-1", name: "Chaos Marine Squad", xp: 0, wargear: ["8x Boltgun", "Autocannon", "Plasma Gun"]}
       ]},
       {id: "CF-TA", name: "Craig", points: 0, army: "Tallarn", units: [
@@ -70,7 +70,7 @@ class App extends Component {
         {number: "HQ-1", name: "XV-8 Commander", xp: 0, wargear: ["Iridium Armour", "2x Shield Drones", "3x Cyclic Ion Blasters", "Engram Neuro Chip"], comments: "Warlord - Strength through Unity"},
         {number: "HQ-2", name: "Ethereal", xp: 0, wargear: ["Markerlight Drone"]},
         {number: "Fast-1", name: "XV4 Piranhas", xp: 0, wargear: ["2 Models", "2x Fusion Blasters"]},
-        {number: "Troop-1", name: "Kroot Carnivores", wargear: []}
+        {number: "Troop-1", name: "Kroot Carnivores", xp: 0, wargear: []}
       ]},
       {id: "DF-TS", name: "Declan", points: 0, army: "Thousand Sons", units: [
         {number: "HQ-1", name: "Exalted Sorceror on Disc", xp: 0, wargear: ["Helm of the Third Eye", "Force Staff"], comments: "Warlord - High Magister"},
@@ -88,7 +88,7 @@ class App extends Component {
         {number: "HQ-1", name: "XV-8 Commander", xp: 0, wargear: ["Iridium Armour", "2x Shield Drones", "3x Cyclic Ion Blasters", "Engram Neuro Chip"], comments: "Warlord - Strength through Unity"},
         {number: "HQ-2", name: "Ethereal", xp: 0, wargear: ["Markerlight Drone"]},
         {number: "Fast-1", name: "XV4 Piranhas", xp: 0, wargear: ["2 Models", "2x Fusion Blasters"]},
-        {number: "Troop-1", name: "Kroot Carnivores", wargear: []}
+        {number: "Troop-1", name: "Kroot Carnivores", xp: 0, wargear: []}
       ]},
       {id: "RK-TU", name: "Ross", points: 0, army: "T'au", units: [
         {number: "HQ-1", name: "XV-8 Commander" , xp: 0, wargear: ["3x Cyclic Ion Blaster", "2x MV4 Shield Drone", "Shield Generator", "Vectored Manouevering Thursters"], comments: "Warlrord - Strength of Belief"},
@@ -118,18 +118,18 @@ class App extends Component {
         <BrowserRouter basename="/ptg-dundee/">
           <div className="App">
             <ul className="navbar background-dim">
-                <li ><NavLink className="border" exact to="/" >Home</NavLink></li>
-                <li ><NavLink className="border" to="/rules" >Rules</NavLink></li>
-                <li ><NavLink className="border" to="/armies" >Armies</NavLink></li>
-                <li ><NavLink className="border" to="/leaderboard">Leaderboard</NavLink></li>
-                <li ><NavLink className="border" to="/matches" >Matches</NavLink></li>
-                <li ><NavLink to="/recruit" >Recruit</NavLink></li>
+                <li><NavLink className="border" exact to="/" >Home</NavLink></li>
+                <li><NavLink className="border" to="/rules" >Rules</NavLink></li>
+                <li><NavLink className="border" to="/armies" >Armies</NavLink></li>
+                <li><NavLink className="border" to="/leaderboard">Leaderboard</NavLink></li>
+                <li><NavLink className="border" to="/matches" >Matches</NavLink></li>
+                <li><NavLink to="/recruit" >Recruit</NavLink></li>
             </ul>
             <div className="content-section">
               <Route exact path="/" component={Home} />
               <Route path="/rules" component={Rules} />
-              <Route path="/armies" component={( props ) => <Armies {...props} players={this.state.players}/>} />
-              <Route path="/leaderboard" component={Leaderboard} />
+              <Route path="/armies" render={( props ) => <Armies {...props} players={this.state.players}/>} />
+              <Route path="/leaderboard" render={( props ) => <Leaderboard {...props} players={this.state.players} />} />
               <Route path="/matches" render={( props ) => <Matches {...props} players={this.state.players}/>} />
               <Route path="/recruit" component={Recruit} />
             </div>

@@ -1,26 +1,23 @@
-import React, { Component }  from 'react';
-import '../App.css';
+import React from 'react';
 import { Table } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
 
-class leaderboard extends Component {
-  state = {
-    players: [
-      {name: "Chris", points: 0},
-      {name: "Dave", points: 0},
-      {name: "John", points: 0},
-      {name: "Ryan", points: 0}
-    ].sort(function(a, b) {
-      return b.points - a.points;
-    })
-  }
+const leaderboard = ( props ) => {
+  const orderedPlayers = [].concat(props.players)
+    .sort((a, b) => b.points - a.points)
+    .map((player, index) => (
+      <Table.Row key={index}>
+        <Table.Cell>{player.name}</Table.Cell>
+        <Table.Cell>{player.points}</Table.Cell>
+      </Table.Row>
+    ));
 
-  render() {
     return (
       <div>
         <div className="App">
           <h1 className="text-bold">Path to Glory Leaderboard</h1>
           <div className="standard background-dim-important">
-            <Table celled textAlign="center">
+            <Table celled textAlign="center" unstackable>
               <Table.Header>
                 <Table.Row>
                   <Table.HeaderCell>Player</Table.HeaderCell>
@@ -28,19 +25,13 @@ class leaderboard extends Component {
                 </Table.Row>
               </Table.Header>
               <Table.Body>
-                {this.state.players.map((item, index) => (
-                  <Table.Row key={index}>
-                    <Table.Cell>{item.name}</Table.Cell>
-                    <Table.Cell>{item.points}</Table.Cell>
-                  </Table.Row>
-                ))}
+                {orderedPlayers}
               </Table.Body>
             </Table>
           </div>
         </div>
       </div>
-    );
-  }
+    )
 }
 
 export default leaderboard;

@@ -127,6 +127,24 @@ td { color: #e5e1e3; }
 
 /** BOF Media CSS **/
 
+/** BOF 840 Media **/
+@media screen and (max-width: 840px) {
+  .horizontal-scroll {
+    width: 95%;
+    overflow: auto;
+    overflow-y: hidden;
+  }
+
+  /* .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  } */
+}
+/** EOF 840 Media **/
+
 /** BOF 450 Media **/
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}

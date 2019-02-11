@@ -5,14 +5,14 @@ import 'semantic-ui-css/semantic.min.css';
 
 const army = ( props ) => {
     return (
-        <div className="standard">
+        <div className="standard horizontal-scroll">
             <div className="title-line">
                 <div className="player-name text-bold"><h3>Player Name: {props.name}</h3></div>
                 <div className="points text-bold"><h3>Campaign Points: {props.points}</h3></div>
                 <div className="army-name text-bold"><h3>Faction: {props.army}</h3></div>
             </div>
             <div className="army-list">
-                <Table compact>
+                <Table compact unstackable>
                     <Table.Header>
                         <Table.Row>
                             <Table.HeaderCell>Type/Number</Table.HeaderCell>
@@ -23,6 +23,7 @@ const army = ( props ) => {
                         </Table.Row>
                     </Table.Header>
                     <Table.Body>
+                        {props.list.map}
                         {props.list.map((unit, index) => (
                             <Unit key={index} number={unit.number} name={unit.name} xp={unit.xp} 
                             wargear={unit.wargear} comments={unit.comments}/>

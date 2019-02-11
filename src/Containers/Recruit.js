@@ -7,7 +7,7 @@ class recruit extends Component {
     return (
       <div>
         <div className="App">
-          <h1 className="text-bold"><a href="http://google.com" rel="noopener noreferrer">Path to Glory Recruitment</a></h1>
+          <h1 className="text-bold"><u><a href="https://drive.google.com/file/d/1mMnZWr0jtuo6fi_AUjB2JpwPZ67zlS8q/view?usp=sharing" rel="noopener noreferrer">Path to Glory Recruitment</a></u></h1>
           <Content title="How does Recruiting work?" 
           content="The recruitment tables can be found by clicking on the title of this page. It will take you to a downloadable 
           PDF.
@@ -19,7 +19,7 @@ class recruit extends Component {
           To generate your new unit roll a D6 to decide which chart you are rolling on and then roll another D6 to decide which
           unit you are getting. Sometimes this will leave you with a choice of units, sometimes it will not. If you do not own a
           model to represent that unit and you are unwilling to purchase that unit (unpainted models are fine), then you may re-roll
-          on the same table. Good luck!"/> 
+          on the same table. Good luck!"/>
         </div>
       </div>
     );
