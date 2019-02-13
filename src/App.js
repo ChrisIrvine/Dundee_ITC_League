@@ -74,9 +74,9 @@ class App extends Component {
       ]},
       {id: "DF-TS", name: "Declan", points: 0, army: "Thousand Sons", units: [
         {number: "HQ-1", name: "Exalted Sorceror on Disc", xp: 0, wargear: ["Helm of the Third Eye", "Force Staff"], comments: "Warlord - High Magister"},
-        {number: "Troop-1", name: "Rubaric Marines", xp: 0, wargear: ["10 x Standard Wargear"]},
-        {number: "Heavy-1", name: "Forgefiend", xp: 0, wargear: []},
-        {number: "Trans-1", name: "Rhino", xp: 0, wargear: []}
+        {number: "Troop-1", name: "Rubaric Marines", xp: 0, wargear: ["1x Soulreaper Cannon", "8x Rubric Marine", "Force Stave", "Warpflame Pistol"], comments: "Psychic Powers - Temporal Manipulation"},
+        {number: "Heavy-1", name: "Forgefiend", xp: 0, wargear: ["2x Ectoplasma Cannon"]},
+        {number: "Trans-1", name: "Rhino", xp: 0, wargear: ["Combi-Bolter", "Combi-Plasma", "Havoc Launcher"]}
       ]},
       {id: "JH-DG", name: "James", points: 0, army: "Death Guard", units: [
         {number: "HQ-1", name: "Chaos Lord", xp: 0, wargear: ["Supperating Plate", "Plague Sword"], comments: "Warlord - Tainted Regeneration"},
@@ -108,6 +108,25 @@ class App extends Component {
         {number: "Heavy-1", name: "Hellblaster Squad", xp: 0, wargear: ["5x Plasma Incinerator"]},
         {number: "Troop-1", name: "Intecessor Squad", xp: 0, wargear: ["5x Bolt Rifles"]},
         {number: "Troop-2", name: "Veteran Squad", xp: 0, wargear: ["3x Terminator with Assault Cannon", "1x Vanguard Veteran with Power Maul and Hand Flamer", "1x Bike with Power Maul", "4x Frag Cannon", "1 Sergeant with Combi-Plasma and Xenophase Blade"]}
+      ]},
+      {id: "YM-TA", name: "Yans", points: 0, army: "T'au (Bork'an)", units: [
+        {number: "HQ-1", name: "XV-8 Commander", xp: 0, wargear: ["2x MV1 Gun Drone", "Plasma Accelerator Rifle (Plasma Rifle)", "3x Plasma Rifle", "Shield Generator", "Iridium Battlesuit"], comments: "Warlord - Seeker of Perfection"},
+        {number: "Elite-1", name: "XV-104 Riptide Battlesuit", xp: 0, wargear: ["Smart Missile System", "Advanced Targetting System", "Heavy Burst Cannon", "2x MV84 Shielded Missile Drone", "Target Lock"]},
+        {number: "Fast-1", name: "Pathfinder Team", xp: 0, wargear: ["MB3 Reacon Drone", "MV31 Pulse Accelerator Drone", "2x Markerlight", "3x Rail Rifle"]},
+        {number: "Trans-1", name: "TY7 Devilifsh", xp: 0, wargear: ["2x MV1 Gun Drone", "Burst Cannon", "2x Seeker Missile"]}
+      ]},
+      {id: "KC-SW", name: "Kev", points: 0, army: "Space Wolves", units: [
+        {number: "HQ-1", name: "Wolf Lord", xp: 0, wargear: ["Armour of Russ", "Jump Pack", "Storm Shield", "Thunder Hammer"], comments: "Warlord - "},
+        {number: "HQ-2", name: "Wolf Guard Battle Leader", xp: 0, wargear: ["Jump Pack", "Storm Shield", "Thunder Hammer"]},
+        {number: "Elite-1", name: "Aggressor Squad", xp: 0, wargear: ["3x Boltstorm Guantlets and Auto Launchers"]},
+        {number: "Fast-1", name: "Landspeeder", xp: 0, wargear: ["Heavy Bolter", "Typhoon Missile Launcher"]},
+        {number: "Fast-2", name: "Landspeeder", xp: 0, wargear: ["Heavy Bolter", "Typhoon Missile Launcher"]}
+      ]},
+      {id: "SC-DG", name: "Simon", points: 0, army: "Death Guard", units: [
+        {number: "HQ-1", name: "Lord in Terminator Armour", xp: 0, wargear: ["Fugaris Helm", "Combi-bolter", "Power Axe"], comments: "Warlord - Living Plague"},
+        {number: "Elite-1", name: "Deathshroud Terminators", xp: 0, wargear: ["3x Manreaper Plaguespurt Guantlet and Scythe"]},
+        {number: "Troop-1", name: "Poxwalkers", xp: 0, wargear: ["10 models"]},
+        {number: "Fast-1", name: "Blight Hualer", xp: 0, wargear: ["Multimelta", "Missile Launcher", "Bile spurt", "Gnashing Maw"]}
       ]}
     ]
   }

@@ -5,7 +5,7 @@ import Match from '../Components/Match';
 class matches extends Component {
   state = {
     matches: [
-      {week: 1, mission: "Vital Intelligence - CA2019", games: [
+      {week: 1, mission: "The Relic (Board: 4 ft. x 4ft. Deployment: Search and Destroy 2 ft. x 2 ft.)", games: [
         {player1: "Chris (Blood Angels)", player2: "Dave (Raven Guard)"},
         {player1: "John (Emperor's Children)", player2: "Ryan (World Eaters)"}
       ]},

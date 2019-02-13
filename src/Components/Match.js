@@ -8,7 +8,7 @@ const match = ( props ) => {
             <div className="round"><h3>Round {props.round}</h3></div>
             <div className="mission"><h4>Mission: {props.mission}</h4></div>
             <div className="army-list match-list">
-                <Table singleLine>
+                <Table unstackable compact>
                     <Table.Header>
                         <Table.Row>
                             <Table.HeaderCell textAlign="left">Player 1</Table.HeaderCell>
