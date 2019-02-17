@@ -60,17 +60,11 @@ class App extends Component {
         {number: "Elite-2", name: "Foul Blightspawn", xp: 0, wargear: []},
         {number: "Trans-1", name: "Rhino", xp: 0, wargear: []}
       ]},
-      {id: "DR-DG", name: "Dave", points: 0, army: "Death Guard", units: [
+      {id: "DR-DG", name: "David", points: 0, army: "Death Guard", units: [
         {number: "HQ-1", name: "Chaos Lord in Terminator Armor", xp: 0, wargear: ["Combi-Plasma", "Chainfist"], comments: "Warlord - Arch Contaminator"},
         {number: "Elite-1", name: "Tallyman", xp: 0, wargear: []},
         {number: "Elite-2", name: "Biologyis Putrifyer", xp: 0, wargear: []},
         {number: "Troop-1", name: "Cultists", xp: 0, wargear: ["10 x standard"]}
-      ]},
-      {id: "MW-TU", name: "Mike", points: 0, army: "T'au", units: [
-        {number: "HQ-1", name: "XV-8 Commander", xp: 0, wargear: ["Iridium Armour", "2x Shield Drones", "3x Cyclic Ion Blasters", "Engram Neuro Chip"], comments: "Warlord - Strength through Unity"},
-        {number: "HQ-2", name: "Ethereal", xp: 0, wargear: ["Markerlight Drone"]},
-        {number: "Fast-1", name: "XV4 Piranhas", xp: 0, wargear: ["2 Models", "2x Fusion Blasters"]},
-        {number: "Troop-1", name: "Kroot Carnivores", xp: 0, wargear: []}
       ]},
       {id: "DF-TS", name: "Declan", points: 0, army: "Thousand Sons", units: [
         {number: "HQ-1", name: "Exalted Sorceror on Disc", xp: 0, wargear: ["Helm of the Third Eye", "Force Staff"], comments: "Warlord - High Magister"},
@@ -97,7 +91,7 @@ class App extends Component {
         {number: "Fast-2", name: "TX4 Pirhanhas", xp: 0, wargear: ["2x MV1 Gun Drone", "Burst Cannon", "2x Seeker Missile"]},
         {number: "Troop-1", name: "Kroot Carnivores", xp:0, wargear: []}        
       ]},
-      {id: "EL-DG", name: "Ewan", points: 0, army: "Death Guard", units: [
+      {id: "EL-DG", name: "Euan", points: 0, army: "Death Guard", units: [
         {number: "HQ-1", name: "Chaos Lord in Terminator Armour", xp: 0, wargear: ["Chainfist", "Combi-Plasma", "Supperating Plate"], comments: "Warlord - Tainted Regeneration"},
         {number: "Heavy-1", name: "Predator", xp: 0, wargear: ["Twin Lascannon", "2x Lascannon Sponson", "Combi-bolter"]},
         {number: "Troop-1", name: "Poxwalker", xp: 0, wargear: []},
@@ -116,7 +110,7 @@ class App extends Component {
         {number: "Trans-1", name: "TY7 Devilifsh", xp: 0, wargear: ["2x MV1 Gun Drone", "Burst Cannon", "2x Seeker Missile"]}
       ]},
       {id: "KC-SW", name: "Kev", points: 0, army: "Space Wolves", units: [
-        {number: "HQ-1", name: "Wolf Lord", xp: 0, wargear: ["Armour of Russ", "Jump Pack", "Storm Shield", "Thunder Hammer"], comments: "Warlord - "},
+        {number: "HQ-1", name: "Wolf Lord", xp: 0, wargear: ["Armour of Russ", "Jump Pack", "Storm Shield", "Thunder Hammer"], comments: "Warlord - Saga of the Wolfkin"},
         {number: "HQ-2", name: "Wolf Guard Battle Leader", xp: 0, wargear: ["Jump Pack", "Storm Shield", "Thunder Hammer"]},
         {number: "Elite-1", name: "Aggressor Squad", xp: 0, wargear: ["3x Boltstorm Guantlets and Auto Launchers"]},
         {number: "Fast-1", name: "Landspeeder", xp: 0, wargear: ["Heavy Bolter", "Typhoon Missile Launcher"]},
@@ -127,6 +121,19 @@ class App extends Component {
         {number: "Elite-1", name: "Deathshroud Terminators", xp: 0, wargear: ["3x Manreaper Plaguespurt Guantlet and Scythe"]},
         {number: "Troop-1", name: "Poxwalkers", xp: 0, wargear: ["10 models"]},
         {number: "Fast-1", name: "Blight Hualer", xp: 0, wargear: ["Multimelta", "Missile Launcher", "Bile spurt", "Gnashing Maw"]}
+      ]},
+      {id: "AH-CW", name: "Alan", points: 0, army: "Altioc Craftworld", units: [
+        {number: "HQ-1", name: "Autarch on Jetbike", xp: 0, wargear: ["Howling Bankshee Mask", "Fusion Gun", "Laser Lance", "The Shimmer Plume of Achillrial"], comments: "Warlord - Mark of the Incomparable Hunter"},
+        {number: "Troop-1", name: "Guardian Defenders", xp: 0, wargear: ["Bright Lance"]},
+        {number: "Troop-2", name: "Guardian Defenders", xp: 0, wargear: ["Bright Lance"]},
+        {number: "Fast-1", name: "Warp Spiders", xp: 0, wargear: ["Exarch - Twin Death Spinners"]},
+        {number: "Trans-1", name: "Wave Serpent", xp: 0, wargear: ["2x Brigt Lance", "Shuriken Cannon", "Spirit Stones", "Vectored Engines", "Star Engines", "Crystal Targeting Matrix"]}
+      ]},
+      {id: "CB-DG", name: "Colin", points: 0, army: "Death Guard", units: [
+        {number: "HQ-1", name: "Chaos Lord", xp: 0, wargear: ["Standard"], comments: "Warlord - Unknown"},
+        {number: "Troop-1", name: "Poxwalkers", xp: 0, wargear: ["20 models"]},
+        {number: "Elite-1", name: "Beast of Nurgle", xp: 0, wargear: ["Standard"]},
+        {number: "Heavy-1", name: "Plagueburst Crawler", xp: 0, wargear: ["Standard"]}
       ]}
     ]
   }

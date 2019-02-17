@@ -10,19 +10,39 @@ const match = ( props ) => {
             <div className="army-list match-list">
                 <Table unstackable compact>
                     <Table.Header>
-                        <Table.Row>
-                            <Table.HeaderCell textAlign="left">Player 1</Table.HeaderCell>
-                            <Table.HeaderCell textAlign="center"></Table.HeaderCell>
-                            <Table.HeaderCell textAlign="right">Player 2</Table.HeaderCell>
-                        </Table.Row>
+                        {props.many ? (
+                            <Table.Row>
+                                <Table.HeaderCell textAlign="left">Player 1</Table.HeaderCell>              
+                                <Table.HeaderCell textAlign="center">Player 2</Table.HeaderCell>
+                                <Table.HeaderCell textAlign="center">Player 3</Table.HeaderCell>
+                                <Table.HeaderCell textAlign="right">Player 4</Table.HeaderCell>
+                            </Table.Row>
+                            ) : (
+                            <Table.Row>
+                                <Table.HeaderCell textAlign="left">Player 1</Table.HeaderCell>
+                                <Table.HeaderCell textAlign="right">Player 2</Table.HeaderCell>
+                            </Table.Row>
+                        )}
                     </Table.Header>
                     <Table.Body>
                         {props.games.map((game, index) => (
-                            <Table.Row key={index}>
-                                <Table.Cell textAlign="left">{game.player1}</Table.Cell>
-                                <Table.Cell textAlign="center">vs</Table.Cell>
-                                <Table.Cell textAlign="right">{game.player2}</Table.Cell>
-                            </Table.Row>
+                            props.many ? (
+                                <Table.Row key={index}>
+                                    <Table.Cell textAlign="left">{game.player1}</Table.Cell>
+                                    <Table.Cell textAlign="center">{game.player2}</Table.Cell>
+                                    <Table.Cell textAlign="center">{game.player3}</Table.Cell>
+                                    {game.four ? (
+                                        <Table.Cell textAlign="right">{game.player4}</Table.Cell>
+                                    ) : (
+                                        <Table.Cell textAlign="right">No player 4</Table.Cell>
+                                    )}
+                                </Table.Row>
+                                ) : (
+                                <Table.Row key={index}>
+                                    <Table.Cell textAlign="left">{game.player1}</Table.Cell>
+                                    <Table.Cell textAlign="right">{game.player2}</Table.Cell>
+                                </Table.Row>
+                            )
                         ))}
                     </Table.Body>
                 </Table>
