@@ -91,12 +91,6 @@ class App extends Component {
         {number: "Fast-2", name: "TX4 Pirhanhas", xp: 0, wargear: ["2x MV1 Gun Drone", "Burst Cannon", "2x Seeker Missile"]},
         {number: "Troop-1", name: "Kroot Carnivores", xp:0, wargear: []}        
       ]},
-      {id: "EL-DG", name: "Euan", points: 0, army: "Death Guard", units: [
-        {number: "HQ-1", name: "Chaos Lord in Terminator Armour", xp: 0, wargear: ["Chainfist", "Combi-Plasma", "Supperating Plate"], comments: "Warlord - Tainted Regeneration"},
-        {number: "Heavy-1", name: "Predator", xp: 0, wargear: ["Twin Lascannon", "2x Lascannon Sponson", "Combi-bolter"]},
-        {number: "Troop-1", name: "Poxwalker", xp: 0, wargear: []},
-        {number: "Trans-1", name: "Rhino", xp: 0, wargear: ["2x Combi-bolter"]}
-      ]},
       {id: "LM-DW", name: "Lee", points: 0, army: "Deathwatch", units: [
         {number: "HQ-1", name: "Primaris Watch Captain", xp: 0, wargear: ["Plasma Pistol", "The Theif of Secrets (Relic Power Sword)"], comments: "Warlord - Lord of Hidden Knowledge"},
         {number: "Heavy-1", name: "Hellblaster Squad", xp: 0, wargear: ["5x Plasma Incinerator"]},
@@ -134,6 +128,12 @@ class App extends Component {
         {number: "Troop-1", name: "Poxwalkers", xp: 0, wargear: ["20 models"]},
         {number: "Elite-1", name: "Beast of Nurgle", xp: 0, wargear: ["Standard"]},
         {number: "Heavy-1", name: "Plagueburst Crawler", xp: 0, wargear: ["Standard"]}
+      ]},
+      {id: "JN-TD", name: "James", points: 0, army: "Tzeentch Demons", units: [
+        {number: "HQ-1", name: "Changecaster", xp: 0, wargear: ["The Evestave"], comments: "Warlord - Daemonspark"},
+        {number: "Troop-1", name: "Pink Horrors", xp: 0, wargear: ["10 models", "Instrument of Chaos", "Daemonic Icon"]},
+        {number: "Fast-1", name: "Screamers of Tzeentch", xp: 0, wargear: ["3 models"]},
+        {number: "Fast-2", name: "Screamers of Tzeentch", xp: 0, wargear: ["3 models"]}
       ]}
     ]
   }
