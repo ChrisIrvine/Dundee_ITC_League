@@ -72,18 +72,12 @@ class App extends Component {
         {number: "Heavy-1", name: "Forgefiend", xp: 0, wargear: ["2x Ectoplasma Cannon"]},
         {number: "Trans-1", name: "Rhino", xp: 0, wargear: ["Combi-Bolter", "Combi-Plasma", "Havoc Launcher"]}
       ]},
-      {id: "JH-DG", name: "James", points: 0, army: "Death Guard", units: [
-        {number: "HQ-1", name: "Chaos Lord", xp: 0, wargear: ["Supperating Plate", "Plague Sword"], comments: "Warlord - Tainted Regeneration"},
-        {number: "Elite-1", name: "Biologis Putriyer", xp: 0, wargear: []},
-        {number: "Elite-2", name: "Foul Blightspawn", xp: 0, wargear: []},
-        {number: "Trans-1", name: "Rhino", xp: 0, wargear: []}
-      ]},
-      {id: "MW-TU", name: "Mike", points: 0, army: "T'au", units: [
-        {number: "HQ-1", name: "XV-8 Commander", xp: 0, wargear: ["Iridium Armour", "2x Shield Drones", "3x Cyclic Ion Blasters", "Engram Neuro Chip"], comments: "Warlord - Strength through Unity"},
-        {number: "HQ-2", name: "Ethereal", xp: 0, wargear: ["Markerlight Drone"]},
-        {number: "Fast-1", name: "XV4 Piranhas", xp: 0, wargear: ["2 Models", "2x Fusion Blasters"]},
-        {number: "Troop-1", name: "Kroot Carnivores", xp: 0, wargear: []}
-      ]},
+      // {id: "MW-TU", name: "Mike", points: 0, army: "T'au", units: [
+      //   {number: "HQ-1", name: "XV-8 Commander", xp: 0, wargear: ["Iridium Armour", "2x Shield Drones", "3x Cyclic Ion Blasters", "Engram Neuro Chip"], comments: "Warlord - Strength through Unity"},
+      //   {number: "HQ-2", name: "Ethereal", xp: 0, wargear: ["Markerlight Drone"]},
+      //   {number: "Fast-1", name: "XV4 Piranhas", xp: 0, wargear: ["2 Models", "2x Fusion Blasters"]},
+      //   {number: "Troop-1", name: "Kroot Carnivores", xp: 0, wargear: []}
+      // ]},
       {id: "RK-TU", name: "Ross", points: 0, army: "T'au", units: [
         {number: "HQ-1", name: "XV-8 Commander" , xp: 0, wargear: ["3x Cyclic Ion Blaster", "2x MV4 Shield Drone", "Shield Generator", "Vectored Manouevering Thursters"], comments: "Warlrord - Strength of Belief"},
         {number: "Elite-1", name: "Krootox Riders", xp: 0, wargear: []},
@@ -134,6 +128,13 @@ class App extends Component {
         {number: "Troop-1", name: "Pink Horrors", xp: 0, wargear: ["10 models", "Instrument of Chaos", "Daemonic Icon"]},
         {number: "Fast-1", name: "Screamers of Tzeentch", xp: 0, wargear: ["3 models"]},
         {number: "Fast-2", name: "Screamers of Tzeentch", xp: 0, wargear: ["3 models"]}
+      ]},
+      {id: "SAP-OK", name: "Steven", points: 0, army: "Orks", units: [
+        {number: "HQ-1", name: "Warboss", xp: 0, wargear: ["Standard"], comments: "Warlord - Unknown"},
+        {number: "Troop-1", name: "Ork Boyz", xp: 0, wargear: ["Standard"]},
+        {number: "Troop-2", name: "Grotz", xp: 0, wargear: ["Standard"]},
+        {number: "Troop-3", name: "Grotz", xp: 0, wargear: ["Standard"]},
+        {number: "Fast-1", name: "Stormboyz", xp: 0, wargear: ["Standard"]}
       ]}
     ]
   }
