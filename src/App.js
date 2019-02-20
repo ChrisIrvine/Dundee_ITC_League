@@ -15,7 +15,7 @@ class App extends Component {
         {number: "HQ-1", name: "Captain in Cataphractii Armour", xp: 0, wargear: ["Thunder Hammer", "Combi-Melta"], comments: "Warlord - Artisan of War"},
         {number: "Elite-1", name: "Company Champion", xp: 0, wargear: ["Combat Shield", "Jump Pack (Angels Wing)", "Master-Crafted Power Sword"]},
         {number: "Troop-1", name: "Scout Squad", xp: 0, wargear: ["3x Sniper and Cloak", "1x Missile Launcher and Cloak", "1x Sniper, Combi-Flamer and Cloak"]},
-        {number: "Flyer-1", name: "Stormraven Gunship", xp: 0, wargear: ["2x Stormstrike Missile Launcher", "Twin Heavy Plasma Cannon", "Two Hurricane Bolters, Typhoon Missile Launcher"]}
+        {number: "Flyer-1", name: "Stormraven Gunship", xp: 0, wargear: ["2x Stormstrike Missile Launcher", "Twin Heavy Plasma Cannon", "Two Hurricane Bolters", "Typhoon Missile Launcher"]}
       ]},
       {id: "JM-EC", name: "John", points: 0, army: "Emperor's Children", units: [
         {number: "HQ-1", name: "Chaos Lord", xp: 0, wargear: ["2x Lightning Claws", "JumpPack", "Intoxicating Elixir"], comments: "Warlord - Unholy Fortitude"},
@@ -60,12 +60,6 @@ class App extends Component {
         {number: "Elite-2", name: "Foul Blightspawn", xp: 0, wargear: []},
         {number: "Trans-1", name: "Rhino", xp: 0, wargear: []}
       ]},
-      {id: "DR-DG", name: "David", points: 0, army: "Death Guard", units: [
-        {number: "HQ-1", name: "Chaos Lord in Terminator Armor", xp: 0, wargear: ["Combi-Plasma", "Chainfist"], comments: "Warlord - Arch Contaminator"},
-        {number: "Elite-1", name: "Tallyman", xp: 0, wargear: []},
-        {number: "Elite-2", name: "Biologyis Putrifyer", xp: 0, wargear: []},
-        {number: "Troop-1", name: "Cultists", xp: 0, wargear: ["10 x standard"]}
-      ]},
       {id: "DF-TS", name: "Declan", points: 0, army: "Thousand Sons", units: [
         {number: "HQ-1", name: "Exalted Sorceror on Disc", xp: 0, wargear: ["Helm of the Third Eye", "Force Staff"], comments: "Warlord - High Magister"},
         {number: "Troop-1", name: "Rubaric Marines", xp: 0, wargear: ["1x Soulreaper Cannon", "8x Rubric Marine", "Force Stave", "Warpflame Pistol"], comments: "Psychic Powers - Temporal Manipulation"},
@@ -81,8 +75,7 @@ class App extends Component {
       {id: "RK-TU", name: "Ross", points: 0, army: "T'au", units: [
         {number: "HQ-1", name: "XV-8 Commander" , xp: 0, wargear: ["3x Cyclic Ion Blaster", "2x MV4 Shield Drone", "Shield Generator", "Vectored Manouevering Thursters"], comments: "Warlrord - Strength of Belief"},
         {number: "Elite-1", name: "Krootox Riders", xp: 0, wargear: []},
-        {number: "Fast-1", name: "TX4 Pirhanhas", xp: 0, wargear: ["2x MV1 Gun Drone", "Burst Cannon", "2x Seeker Missile"]},
-        {number: "Fast-2", name: "TX4 Pirhanhas", xp: 0, wargear: ["2x MV1 Gun Drone", "Burst Cannon", "2x Seeker Missile"]},
+        {number: "Fast-1", name: "TX4 Pirhanhas", xp: 0, wargear: ["2 models", "2x MV1 Gun Drone", "Burst Cannon", "2x Seeker Missile"]},
         {number: "Troop-1", name: "Kroot Carnivores", xp:0, wargear: []}        
       ]},
       {id: "LM-DW", name: "Lee", points: 0, army: "Deathwatch", units: [

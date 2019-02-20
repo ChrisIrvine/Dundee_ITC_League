@@ -7,10 +7,9 @@ class matches extends Component {
     matches: [
       {round: 1, mission: "The Relic (Board: 4 ft. x 4ft. Deployment: Search and Destroy 2 ft. x 2 ft.)", many: true, games: [
         {four: true, player1: "Dave (Raven Guard)", player2: "Kev (Space Wolves)", player3: "Steven (Orks)", player4: "Alan (Altioc)"},
-        {four: false, player1: "David (Death Guard)", player2: "Simon (Death Guard)", player3: "Yans (Bork'an T'au)"},
         {four: true, player1: "James (Tzeentch Demons)", player2: "Chris (Blood Angels)", player3: "Lee (Deathwatch)", player4: "Ryan (World Eaters)"},
-        {four: false, player1: "John (Emperor's Children)", player2: "Colin (Death Guard)", player3: "Declan (Thousand Sons)"},
-        {four: false, player1: "Gavin (Sautekh Necrons)", player2: "Ross (T'au)", player3: "Craig (Tallarn)"}
+        {four: true, player1: "John (Emperor's Children)", player2: "Colin (Death Guard)", player3: "Declan (Thousand Sons)", player4: "Yans (Bork'an T'au)"},
+        {four: true, player1: "Gavin (Sautekh Necrons)", player2: "Ross (T'au)", player3: "Craig (Tallarn)", player4: "Simon (Death Guard)" }
       ]},
       {round: 2, mission: "TBD", many: false, games: [
         {player1: "TBD", player2: "TBD"}
