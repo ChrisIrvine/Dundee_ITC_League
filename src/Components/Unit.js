@@ -7,8 +7,7 @@ const unit = ( props ) => {
     return (
         <Table.Row>
             <Table.Cell>{props.number}</Table.Cell>
-            <Table.Cell>{props.name}</Table.Cell>   
-            <Table.Cell>{props.xp}</Table.Cell>
+            <Table.Cell>{props.name}</Table.Cell>
             <Table.Cell>
                 <ul>
                     {props.wargear.map((item, index) => (
@@ -16,7 +15,12 @@ const unit = ( props ) => {
                     ))}
                 </ul>
             </Table.Cell>
-            <Table.Cell>{props.comments}</Table.Cell>
+            <Table.Cell>
+                <ul>
+                   {props.comments.map((comment, index) => (
+                       <li key={index}>{comment}</li>
+                   ))}
+                </ul></Table.Cell>
         </Table.Row>
     )
 }

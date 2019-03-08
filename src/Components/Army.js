@@ -17,15 +17,14 @@ const army = ( props ) => {
                         <Table.Row>
                             <Table.HeaderCell>Type/Number</Table.HeaderCell>
                             <Table.HeaderCell>Name</Table.HeaderCell>
-                            <Table.HeaderCell>XP</Table.HeaderCell>
                             <Table.HeaderCell>Wargear</Table.HeaderCell>
                             <Table.HeaderCell>Comments</Table.HeaderCell>
                         </Table.Row>
                     </Table.Header>
                     <Table.Body>
-                        {props.list.map}
+                        {/* {props.list.map} */}
                         {props.list.map((unit, index) => (
-                            <Unit key={index} number={unit.number} name={unit.name} xp={unit.xp} 
+                            <Unit key={index} number={unit.number} name={unit.name} 
                             wargear={unit.wargear} comments={unit.comments}/>
                         ))}
                     </Table.Body>
