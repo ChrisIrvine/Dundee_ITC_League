@@ -57,13 +57,15 @@ class App extends Component {
         {number: "Troop-1", name: "Imperial Guardsmen", wargear: ["9x Lasgun", "Laspistol and Chainsword"], comments: []},
         {number: "Troop-2", name: "Imperial Guardsmen", wargear: ["9x Lasgun", "Laspistol and Chainsword"], comments: []}
       ]},
-      {id: "GL-NC", name: "Gavin", points: 2, army: "Sautekh Necrons", units: [
-        {number: "HQ-1", name: "Overlord", wargear: ["Voidscythe", "Resurrecton Orb", "Veil of Darkness"], comments: ["Warlord - Hyperlogical Strategist", "Hero"]},
+      {id: "GL-NC", name: "Gavin", points: 4, army: "Sautekh Necrons", units: [
+        {number: "HQ-1", name: "Overlord", wargear: ["Voidscythe", "Resurrecton Orb", "Veil of Darkness"], comments: ["Warlord - Hyperlogical Strategist", "Ferocious Combatant", "Artificer Weapon", "Shredder", "Brutal"]},
         {number: "HQ-2", name: "Destroyer Lord", wargear: ["Warscythe", "Phylactary"], comments: []},
         {number: "Elite-1", name: "Triarch Stalker", wargear: ["Twin Heavy Gauss Cannon"], comments: []},
         {number: "Elite-2", name: "Deathmarks", wargear: ["5 Models"], comments: []},
-        {number: "Troop-1", name: "Necron Warriors", wargear: ["10 Models"], comments: []},
+        {number: "Elite-3", name: "Triarch Praetorians", wargear: ["5x Voidblade and Particle Caster"], comments: []},
+        {number: "Troop-1", name: "Necron Warriors", wargear: ["20 Models"], comments: []},
         {number: "Fast-1", name: "Canoptek Scarabs", wargear: ["3 Models"], comments: []},
+        {number: "Heavy-1", name: "Transcendent C'tan", wargear: [], comments: []},
         {number: "Trans-1", name: "Ghost Ark", wargear: ["Standard"], comments: []}
       ]},
       {id: "RK-TU", name: "Ross", points: 0, army: "T'au", units: [
@@ -79,9 +81,12 @@ class App extends Component {
       ]},
       {id: "LM-DW", name: "Lee", points: 0, army: "Deathwatch", units: [
         {number: "HQ-1", name: "Primaris Watch Captain", wargear: ["Plasma Pistol", "The Theif of Secrets (Relic Power Sword)"], comments: ["Warlord - Lord of Hidden Knowledge"]},
+        {number: "Elite-1", name: "Reiver Squad", wargear: ["5 models", "Heavy Bolt Pistols", "Combat Knives", "Grav Chutes", "Grapnel Hooks"], comments: []},
+        {number: "Troop-1", name: "Intecessor Squad", wargear: ["5x Bolt Rifles", "Power Sword"], comments: []},
+        {number: "Troop-2", name: "Intecessor Squad", wargear: ["5x Bolt Rifles", "Power Sword"], comments: []},
+        {number: "Troop-3", name: "Veteran Squad", wargear: ["4x Terminator with Assault Cannon + Chain Fist", "1x Vanguard with Heavy Thunder Hammer", "1x Bike with Power Maul", "4x Frag Cannon", "1 Sergeant with Combi-Plasma and Xenophase Blade"], comments: []},
         {number: "Heavy-1", name: "Hellblaster Squad", wargear: ["5x Plasma Incinerator"], comments: []},
-        {number: "Troop-1", name: "Intecessor Squad", wargear: ["5x Bolt Rifles"], comments: []},
-        {number: "Troop-2", name: "Veteran Squad", wargear: ["3x Terminator with Assault Cannon", "1x Vanguard Veteran with Power Maul and Hand Flamer", "1x Bike with Power Maul", "4x Frag Cannon", "1 Sergeant with Combi-Plasma and Xenophase Blade"], comments: []}
+        {number: "Trans-1", name: "Razorback", wargear: ["Twin Lascannon", "Storm Bolter", "Hunter Killer Missile"], comments: []}
       ]},
       {id: "YM-TA", name: "Yans", points: 0, army: "T'au (Bork'an)", units: [
         {number: "HQ-1", name: "XV-8 Commander", wargear: ["2x MV1 Gun Drone", "Plasma Accelerator Rifle (Plasma Rifle)", "3x Plasma Rifle", "Shield Generator", "Iridium Battlesuit"], comments: ["Warlord - Seeker of Perfection", "Inspirational Leader"]},
@@ -102,17 +107,24 @@ class App extends Component {
         {number: "Fast-1", name: "Landspeeder", wargear: ["Heavy Bolter", "Typhoon Missile Launcher"], comments: []},
         {number: "Fast-2", name: "Landspeeder", wargear: ["Heavy Bolter", "Typhoon Missile Launcher"], comments: []}
       ]},
-      {id: "SC-DG", name: "Simon", points: 0, army: "Death Guard", units: [
-        {number: "HQ-1", name: "Lord in Terminator Armour", wargear: ["Fugaris Helm", "Combi-bolter", "Power Axe"], comments: ["Warlord - Living Plague"]},
+      {id: "SC-DG", name: "Simon", points: 1, army: "Death Guard", units: [
+        {number: "HQ-1", name: "Lord in Terminator Armour", wargear: ["Fugaris Helm", "Combi-bolter", "Power Axe"], comments: ["Warlord - Living Plague", "+1 Str to Combi-Bolter", "Hero"]},
         {number: "Elite-1", name: "Deathshroud Terminators", wargear: ["3x Manreaper Plaguespurt Guantlet and Scythe"], comments: []},
+        {number: "Elite-2", name: "Terminator Blightlords", wargear: ["5x Bubonic Axe and Comib-melta"], comments: []},
+        {number: "Elite-3", name: "Foul Blightspawn", wargear: ["Plague Sprayer"], comments: []},
+        {number: "Elite-4", name: "Noxious Blightbringer", wargear: ["Cursed Plague Bell", "Plasma Pistol"], comments: []},
+        {number: "Elite-5", name: "Plague Surgeon", wargear: ["Bolt Pistol", "Balesword"], comments: []},
         {number: "Troop-1", name: "Poxwalkers", wargear: ["10 models"], comments: []},
         {number: "Fast-1", name: "Blight Hualer", wargear: ["Multimelta", "Missile Launcher", "Bile spurt", "Gnashing Maw"], comments: []}
       ]},
-      {id: "AH-CW", name: "Alan", points: 0, army: "Altioc Craftworld", units: [
-        {number: "HQ-1", name: "Autarch on Jetbike", wargear: ["Howling Bankshee Mask", "Fusion Gun", "Laser Lance", "The Shimmer Plume of Achillrial"], comments: ["Warlord - Mark of the Incomparable Hunter"]},
-        {number: "Troop-1", name: "Guardian Defenders", wargear: ["Bright Lance"], comments: []},
-        {number: "Troop-2", name: "Guardian Defenders", wargear: ["Bright Lance"], comments: []},
+      {id: "AH-CW", name: "Alan", points: 2, army: "Altioc Craftworld", units: [
+        {number: "HQ-1", name: "Autarch Skyrunner", wargear: ["Howling Bankshee Mask", "Fusion Gun", "Laser Lance", "The Shimmer Plume of Achillrial"], comments: ["Warlord - Mark of the Incomparable Hunter", "+1 to Cover Saves in Cover"]},
+        {number: "HQ-2", name: "Farseer Skyrunner", wargear: ["Shuriken Pistol", "Singing Spear", "Twin Shuriken Catapult"], comments: ["Powers - Guide and Doom"]},
+        {number: "Elite-1", name: "Fire Dragons", wargear: ["4x Fusion Gun", "Dragon's Breath Flamer"], comments: []},
+        {number: "Troop-1", name: "Guardian Defenders", wargear: ["Heavy Weapons Platform: Bright Lance"], comments: []},
+        {number: "Troop-2", name: "Guardian Defenders", wargear: ["Heavy Weapons Platform: Bright Lance"], comments: []},
         {number: "Fast-1", name: "Warp Spiders", wargear: ["Exarch - Twin Death Spinners"], comments: []},
+        {number: "Heavy-1", name: "Fire Prism", wargear: ["Crystal Targeting Matrix", "Shuriken Cannon", "Spirit Stones", "Star Engines", "Vectored Engines"], comments: []},
         {number: "Trans-1", name: "Wave Serpent", wargear: ["2x Brigt Lance", "Shuriken Cannon", "Spirit Stones", "Vectored Engines", "Star Engines", "Crystal Targeting Matrix"], comments: []}
       ]},
       {id: "CB-DG", name: "Colin", points: 1, army: "Death Guard", units: [
@@ -123,12 +135,6 @@ class App extends Component {
         {number: "Troop-1", name: "Poxwalkers", wargear: ["20 models"], comments: []},
         {number: "Fast-1", name: "Chaos Spawn", wargear: ["1 Model"], comments: []},
         {number: "Heavy-1", name: "Plagueburst Crawler", wargear: ["2 Plaguespitter", "Heavy Slugger"], comments: []}
-      ]},
-      {id: "JN-TD", name: "James", points: 0, army: "Tzeentch Demons", units: [
-        {number: "HQ-1", name: "Changecaster", wargear: ["The Evestave"], comments: ["Warlord - Daemonspark"]},
-        {number: "Troop-1", name: "Pink Horrors", wargear: ["10 models", "Instrument of Chaos", "Daemonic Icon"], comments: []},
-        {number: "Fast-1", name: "Screamers of Tzeentch", wargear: ["3 models"], comments: []},
-        {number: "Fast-2", name: "Screamers of Tzeentch", wargear: ["3 models"], comments: []}
       ]}
     ]
   }
