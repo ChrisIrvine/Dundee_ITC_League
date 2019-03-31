@@ -21,13 +21,16 @@ class App extends Component {
         {number: "Heavy-2", name: "Stalker", wargear: ["2x Icarus Stormcannon", "Storm Bolter", "Hunter-Killer Missile"], comments: []},
         {number: "Flyer-1", name: "Stormraven Gunship", wargear: ["2x Stormstrike Missile Launcher", "Twin Heavy Plasma Cannon", "Two Hurricane Bolters", "Typhoon Missile Launcher"], comments: []}
       ]},
-      {id: "JM-EC", name: "John", points: 1, army: "Emperor's Children", units: [
-        {number: "HQ-1", name: "Chaos Lord", wargear: ["2x Lightning Claws", "JumpPack", "Intoxicating Elixir", "Mark of Slaanesh"], comments: ["Warlord - Unholy Fortitude", "Hero"]},
+      {id: "JM-EC", name: "John", points: 3, army: "Emperor's Children", units: [
+        {number: "HQ-1", name: "Chaos Lord", wargear: ["2x Lightning Claws", "Jump Pack", "Intoxicating Elixir", "Mark of Slaanesh"], comments: ["Warlord - Unholy Fortitude", "Heroic Constitution", "Heroic", "Ferocious Combatant", "Inspirational Leader"]},
         {number: "HQ-2", name: "Dark Apostle", wargear: ["Combi-melta", "Mark of Slaanesh", "Power Maul"], comments: []},
+        {number: "HQ-3", name: "Cypher", wargear: ["Cypher's Bolt Pistol", "Cypher's Plasma Pistol"], comments: []},
         {number: "Elite-1", name: "Chosen", wargear: ["5x Combi-melta & Power Sword"], comments: []},
         {number: "Troop-1", name: "Chaos Marine Squad", wargear: ["7x Boltgun", "2x Plasma Gun", "Sgt: Combi-Plasma & Power Fist"], comments: []},
+        {number: "Fast-1", name: "Raptor Squad", wargear: ["2x Chainsword and Bolt Pistol", "2x Meltagun", "Champ with 2 Lightning Claws"], comments: []},
         {number: "Heavy-1", name: "Havoc Marine Squad", wargear: ["4x Plasma Gun", "Combi-Plasma", "Power Sword"], comments: []},
         {number: "Heavy-2", name: "Havoc Marine Squad", wargear: ["4x Lascannon", "Power Sword"], comments: []},
+        {number: "Flyer-1", name: "Heldrake", wargear: ["Claws"], comments: []},
         {number: "Trans-1", name: "Chaos Rhino", wargear: ["2x Combi-bolter", "Havoc Launcher", "Mark of Slaanesh"], comments: []}
       ]},
       {id: "DM-RG", name: "Dave", points: 2, army: "Raven Guard", units: [
@@ -51,11 +54,15 @@ class App extends Component {
         {number: "Trans-1", name: "Chaos Rhino", wargear: ["Combi-bolter", "Combi-Plasma", "Havoc Launcher"], comments: []}
       ]},
       {id: "CF-TA", name: "Craig", points: 1, army: "Tallarn", units: [
-        {number: "HQ-1", name: "Company Commander", wargear: ["Power Sword (Claws of the Desert Tigers)", "Laspistol"], comments: ["Warlord - Grand Strategist"]},
+        {number: "HQ-1", name: "Company Commander", wargear: ["Power Sword", "Plasma Pistol"], comments: ["Warlord - Swift Attacker"]},
         {number: "Elite-1", name: "Officer of the Fleet", wargear: ["Standard"], comments: []},
-        {number: "Transport-1", name: "Taurox", wargear: ["Standard"], comments: []},
-        {number: "Troop-1", name: "Imperial Guardsmen", wargear: ["9x Lasgun", "Laspistol and Chainsword"], comments: []},
-        {number: "Troop-2", name: "Imperial Guardsmen", wargear: ["9x Lasgun", "Laspistol and Chainsword"], comments: []}
+        {number: "Elite-2", name: "Ogryn Bodyguard", wargear: ["Bullgryn Plate", "Grenadier Guantlet", "The Deathmask of Ollanius", "Slabshield"], comments: []},
+        {number: "Troop-1", name: "Infantry Squad", wargear: ["8x Lasgun", "Plasma Pistol", "Power Sword", "Plasma Gun", "Vox-Caster"], comments: []},
+        {number: "Troop-2", name: "Infantry Squad", wargear: ["8x Lasgun", "Plasma Pistol", "Power Sword", "Plasma Gun", "Vox-Caster"], comments: []},
+        {number: "Troop-3", name: "Infantry Squad", wargear: ["8x Lasgun", "Plasma Pistol", "Power Sword", "Plasma Gun", "Vox-Caster"], comments: []},
+        {number: "Troop-4", name: "Infantry Squad", wargear: ["8x Lasgun", "Plasma Pistol", "Power Sword", "Plasma Gun", "Vox-Caster"], comments: []},
+        {number: "Trans-1", name: "Taurox", wargear: ["2x Autocannon", "Heavy Stubber"], comments: []},
+        {number: "Trans-2", name: "Taurox", wargear: ["2x Autocannon", "Heavy Stubber"], comments: []},
       ]},
       {id: "GL-NC", name: "Gavin", points: 4, army: "Sautekh Necrons", units: [
         {number: "HQ-1", name: "Overlord", wargear: ["Voidscythe", "Resurrecton Orb", "Veil of Darkness"], comments: ["Warlord - Hyperlogical Strategist", "Ferocious Combatant", "Artificer Weapon", "Shredder", "Brutal"]},
@@ -88,13 +95,16 @@ class App extends Component {
         {number: "Heavy-1", name: "Hellblaster Squad", wargear: ["5x Plasma Incinerator"], comments: []},
         {number: "Trans-1", name: "Razorback", wargear: ["Twin Lascannon", "Storm Bolter", "Hunter Killer Missile"], comments: []}
       ]},
-      {id: "YM-TA", name: "Yans", points: 0, army: "T'au (Bork'an)", units: [
-        {number: "HQ-1", name: "XV-8 Commander", wargear: ["2x MV1 Gun Drone", "Plasma Accelerator Rifle (Plasma Rifle)", "3x Plasma Rifle", "Shield Generator", "Iridium Battlesuit"], comments: ["Warlord - Seeker of Perfection", "Inspirational Leader"]},
+      {id: "YM-TA", name: "Yans", points: 1, army: "T'au (Bork'an)", units: [
+        {number: "HQ-1", name: "XV-8 Commander", wargear: ["2x MV1 Gun Drone", "Plasma Accelerator Rifle (Plasma Rifle)", "3x Plasma Rifle", "Shield Generator", "Iridium Battlesuit"], comments: ["Warlord - Seeker of Perfection", "Inspirational Leader", "Hero (4 Rolls in Round 3)"]},
         {number: "HQ-2", name: "Ethereal", wargear: ["Hover Drone", "Honour Blade", "2x Marker Drones"], comments: []},
-        {number: "Elite-1", name: "XV-104 Riptide Battlesuit", wargear: ["Smart Missile System", "Advanced Targetting System", "Heavy Burst Cannon", "2x MV84 Shielded Missile Drone", "Target Lock"], comments: []},
+        {number: "Elite-1", name: "XV-104 Riptide Battlesuit", wargear: ["2 SMS", "Advanced Targetting System", "Heavy Burst Cannon", "2x MV84 Shielded Missile Drone", "Target Lock"], comments: []},
         {number: "Elite-2", name: "Ghostkeel Battlesuit", wargear: ["2x Fusion Blaster", "Fusion Collider", "Target Lock", "Shield Generator", "2x Stealth Drones"], comments: []},
+        {number: "Troop-1", name: "Strike Team", wargear: ["2 MV7 Marker Drone", "DS8 Tactical Support Turret (SMS)", "9x Fire warrior", "Shas'ui"], comments: []},
         {number: "Fast-1", name: "Pathfinder Team", wargear: ["MB3 Reacon Drone", "MV31 Pulse Accelerator Drone", "2x Markerlight", "3x Rail Rifle"], comments: []},
         {number: "Fast-2", name: "Kroot Hounds", wargear: ["Mouths"], comments: []},
+        {numbre: "Fast-3", name: "TVX Piranhas", wargear: ["2 Models", "Gun Drone", "Fusion Blaster", "2 Seeker Missile"], comments: []},
+        {numbre: "Fast-4", name: "TVX Piranhas", wargear: ["2 Models", "Gun Drone", "Fusion Blaster", "2 Seeker Missile"], comments: []},
         {number: "Trans-1", name: "TY7 Devilifsh", wargear: ["2x MV1 Gun Drone", "Burst Cannon", "2x Seeker Missile"], comments: []}
       ]},
       {id: "KC-SW", name: "Kev", points: 1, army: "Space Wolves", units: [
@@ -109,11 +119,13 @@ class App extends Component {
       ]},
       {id: "SC-DG", name: "Simon", points: 1, army: "Death Guard", units: [
         {number: "HQ-1", name: "Lord in Terminator Armour", wargear: ["Fugaris Helm", "Combi-bolter", "Power Axe"], comments: ["Warlord - Living Plague", "+1 Str to Combi-Bolter", "Hero"]},
+        {number: "HQ-2", name: "Malignant Plague Caster", wargear: ["Corrupted Staff"], comments: []},
         {number: "Elite-1", name: "Deathshroud Terminators", wargear: ["3x Manreaper Plaguespurt Guantlet and Scythe"], comments: []},
         {number: "Elite-2", name: "Terminator Blightlords", wargear: ["5x Bubonic Axe and Comib-melta"], comments: []},
         {number: "Elite-3", name: "Foul Blightspawn", wargear: ["Plague Sprayer"], comments: []},
         {number: "Elite-4", name: "Noxious Blightbringer", wargear: ["Cursed Plague Bell", "Plasma Pistol"], comments: []},
         {number: "Elite-5", name: "Plague Surgeon", wargear: ["Bolt Pistol", "Balesword"], comments: []},
+        {number: "Elite-6", name: "Biologus Putrifier", wargear: ["Hyper Blight Grenades", "Plague Knife"], comments: []},
         {number: "Troop-1", name: "Poxwalkers", wargear: ["10 models"], comments: []},
         {number: "Fast-1", name: "Blight Hualer", wargear: ["Multimelta", "Missile Launcher", "Bile spurt", "Gnashing Maw"], comments: []}
       ]},

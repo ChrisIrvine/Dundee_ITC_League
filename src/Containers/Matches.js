@@ -11,7 +11,7 @@ class matches extends Component {
         {four: true, player1: "John (Emperor's Children)", player2: "Colin (Death Guard)", player3: "Declan [Dropped]", player4: "Yans (Bork'an T'au)"},
         {four: true, player1: "Gavin (Sautekh Necrons)", player2: "Ross (T'au)", player3: "Craig (Tallarn)", player4: "Simon (Death Guard)" }
       ]},
-      {round: 2, mission: "Glory Seeker (Open War) (Board: 4x4. Deployment: Front-Line Assault", many: false, games: [
+      {round: 2, mission: "Glory Seeker (Open War) (Board: 4x4. Deployment: Front-Line Assault)", many: false, games: [
         {four: false, player1: "Dave (Raven Guard)", player2: "Chris (Blood Angels"},
         {four: false, player1: "Colin (Death Guard)", player2: "Kev (Space Wolves)"},
         {four: false, player1: "Craig (Tallarn)", player2: "Ryan (World Eaters)"},
