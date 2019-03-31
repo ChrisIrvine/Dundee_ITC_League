@@ -12,13 +12,22 @@ class matches extends Component {
         {four: true, player1: "Gavin (Sautekh Necrons)", player2: "Ross (T'au)", player3: "Craig (Tallarn)", player4: "Simon (Death Guard)" }
       ]},
       {round: 2, mission: "Glory Seeker (Open War) (Board: 4x4. Deployment: Front-Line Assault)", many: false, games: [
-        {four: false, player1: "Dave (Raven Guard)", player2: "Chris (Blood Angels"},
+        {four: false, player1: "Dave (Raven Guard)", player2: "Chris (Blood Angels)"},
         {four: false, player1: "Colin (Death Guard)", player2: "Kev (Space Wolves)"},
         {four: false, player1: "Craig (Tallarn)", player2: "Ryan (World Eaters)"},
         {four: false, player1: "James (Tzeentch Demons)", player2: "Gavin (Necrons)"},
         {four: false, player1: "Simon (Death Guard)", player2: "Alan (Altioc)"},
         {four: false, player1: "Ross (T'au)", player2: "Lee (Deathwatch)"},
         {four: false, player1: "Yans (T'au)", player2: "John (Emperor's Children)"}
+      ]},
+      {round: 3, mission: "Take and Hold (Open War) (Board: 6x4. Deployment: See Facebook Post)", many: false, games: [
+        {four: false, player1: "John (Emperor's Children)", player2: "BYE ROUND"},
+        {four: false, player1: "Kev (Space Wolves)", player2: "Ross (T'au)"},
+        {four: false, player1: "Gavin (Necrons)", player2: "Chris (Blood Angels)"},
+        {four: false, player1: "Alan (Altioc)", player2: "Colin (Death Guard)"},
+        {four: false, player1: "Ryan (World Eaters)", player2: "Yans (T'au)"},
+        {four: false, player1: "Dave (Raven Guard)", player2: "Simon (Death Guard)"},
+        {four: false, player1: "Lee (Deathwatch)", player2: "Craig (Tallarn)"}
       ]}
     ]
   }
