@@ -1,16 +1,13 @@
 import React, { Component }  from 'react';
 import '../App.css';
-import Army from '../Components/Army';
 
 class armies extends Component {
   render () {
     return (
       <div>
         <div className="App">
-          <h1 className="text-bold">Path to Glory Armies</h1>
-          {this.props.players.map((player, key) => (
-            <Army name={player.name} points={player.points} list={player.units} army={player.army} key={key}/>
-          ))}
+          <h1 className="text-bold">Dundee ITC Armies</h1>
+          Grid of player names with the official army art for the main faction. When clicked on take the user to the Army component which as a PDF viewer.
         </div>
       </div>
     );

@@ -15,13 +15,13 @@ const leaderboard = ( props ) => {
     return (
       <div>
         <div className="App">
-          <h1 className="text-bold">Path to Glory Leaderboard</h1>
+          <h1 className="text-bold">Dundee ITC Leaderboard</h1>
           <div className="standard background-dim-important">
             <Table celled textAlign="center" unstackable>
               <Table.Header>
                 <Table.Row>
                   <Table.HeaderCell>Player</Table.HeaderCell>
-                  <Table.HeaderCell>Points</Table.HeaderCell>
+                  <Table.HeaderCell>ITC Points</Table.HeaderCell>
                 </Table.Row>
               </Table.Header>
               <Table.Body>
