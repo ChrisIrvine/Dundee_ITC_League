@@ -23,7 +23,7 @@ html, body {
 
 /** BOF Colors - Color Scheme inspired by Spacehulk: Deathwing User Interface **/
 .text-regular { color: #e5e1e3; }
-.text-bold { color: #4fb1fb; }
+.text-bold { color: #4fb1fb; font-weight: bold}
 .background-selected { background-color: #236481; }
 .background-dim { background-color: #142634; }
 .background-dim-important { background-color: #142634 !important; }
@@ -121,9 +121,11 @@ th { color: #4fb1fb !important; }
 td { color: #e5e1e3; }
 /** EOF Army **/
 
-/** BOF Match **/
-
-/** EOF Match **/
+/** BOF Round **/
+.winner {
+  background-color: #236481 !important;
+}
+/** EOF Round **/
 
 /** BOF Media CSS **/
 

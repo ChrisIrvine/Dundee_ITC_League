@@ -18,8 +18,26 @@ const round = (props ) => {
                     <Table.Body>
                         {props.games.map((game, index) => (
                             <Table.Row key={index}>
-                                <Table.Cell textAlign="left">{game.player1}</Table.Cell>
-                                <Table.Cell textAlign="right">{game.player2}</Table.Cell>
+                                <Table.Cell
+                                  textAlign="left"
+                                  className={game.winner.includes("1", 1) ? (
+                                      "text-bold"
+                                    ) : (
+                                      ""
+                                  )}
+                                >
+                                  {game.player1}
+                                </Table.Cell>
+                                <Table.Cell
+                                  textAlign="right"
+                                  className={game.winner.includes("2", 1) ? (
+                                      "text-bold"
+                                    ) : (
+                                      ""
+                                  )}
+                                >
+                                  {game.player2}
+                                </Table.Cell>
                             </Table.Row>
                         ))}
                     </Table.Body>
