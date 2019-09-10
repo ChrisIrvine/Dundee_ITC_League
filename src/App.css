@@ -119,6 +119,11 @@ table, thead, th, tr, tbody, td{
 th { color: #4fb1fb !important; } 
 
 td { color: #e5e1e3; }
+
+.army-image {
+  height: auto;
+  width: 200px;
+}
 /** EOF Army **/
 
 /** BOF Round **/

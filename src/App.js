@@ -11,7 +11,7 @@ class App extends Component {
   state = {
     players : [
       {id: "CI-BA", name: "Chris", points: 0, army: "Blood Angels"},
-      {id: "JM-EC", name: "John", points: 0, army: "Emperor's Children"}
+      {id: "JM-EC", name: "John", points: 0, army: "Chaos Space Marines"}
     ]
   };
 
